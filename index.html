@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee form</title>
+  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-lights">
+  <div class="container-fluid bg-light ">
+    <div class="container col-lg-6 bg-light pe-3">
+      <form class="needs-validation" novalidate>
+        <h4>Please enter the details of employee</h4>
+        <div class="row">
+          <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">First name</label>
+            <input type="text" class="form-control" id="validationCustom01"  required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+             please Enter first name  
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">Middle name</label>
+            <input type="text" class="form-control" id="validationCustom02" >
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustomUsername" class="form-label" required>Last name</label>
+            <div class="input-group has-validation">
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Please enter last name.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+          <div class="invalid-feedback">
+            Enter email
+          </div>
+        </div>
+        <div>
+<div class="row">
+  <div class="mt-3 mb-3 col-md-4">
+    <label for="phone" class="form-label">Contact:</label>
+    <input type="number" class="form-control" id="phone" placeholder="Enter phone no." name="phone" required min="9000000000" maxlength="9999999999">
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+    <div class="invalid-feedback">
+      Enter phone no. 
+    </div>
+  </div>
+  <div class="mt-3 mb-3 col-md-8">
+    <label for="gender" class="form-label">Gender: </label>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input form-check-inline" type="radio" name="gender" id="exampleRadios1"
+        value="option1" checked>
+      <label class="form-check-label" for="exampleRadios1">
+        Male
+      </label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input form-check-inline" type="radio" name="gender" id="exampleRadios2"
+        value="option2">
+      <label class="form-check-label" for="exampleRadios2">
+        Female
+      </label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input form-check-inline" type="radio" name="gender" id="exampleRadios3"
+        value="option3">
+      <label class="form-check-label" for="exampleRadios3">
+        Others
+      </label>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="mb-3 mt-3 col-md-6">
+    <label for="designation" class="form-label">Designation:</label>
+    <select class="form-select" name="designation" aria-label="Default select example">
+      <option value="1">CEO</option>
+      <option value="2">CTO</option>
+      <option value="3">Developer</option>
+      <option value="3">Q/A</option>
+      <option value="3">B/A</option>
+    </select>
+  </div>
+  <div class="mt-3 mb-3 col-md-6" >
+    <label for="joineddate" class="form-label">Joined date:</label>
+    <input type="date" class="form-control" id="joineddate" name="joineddate" required>
+  </div>
+</div>
+          <div class="mt-3 mb-3">
+            <label for="adress" class="form-label">Adress:</label>
+            <input type="text" class="form-control" id="adress" placeholder="Enter adress" name="adress" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback">
+              Enter adress
+            </div>
+          </div>
+          <button type="submit" onclick="hello()" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+  <script src="./bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
